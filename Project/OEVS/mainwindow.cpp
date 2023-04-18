@@ -67,6 +67,7 @@ void MainWindow::InitMainWnd()
     InitBookList();
     InitSearchFrame();
     InitMainFrame();
+    InitIndexList();
     connect(close_btn,SIGNAL(clicked(bool)),this,SLOT(CloseWindow()));
     connect(minisize_btn,SIGNAL(clicked(bool)),this,SLOT(MinisizeWindow()));
 }
@@ -113,6 +114,17 @@ void MainWindow::InitMainFrame() //初始化组件
     second_book->SetButton(*secondB_Icon,text_02);
     ui->MainFrameLayout->addWidget(first_book);
     ui->MainFrameLayout->addWidget(second_book);
+}
+
+void MainWindow::InitIndexList()
+{
+    QToolButton * firstIndex = new QToolButton;
+    QToolButton * secondIndex = new QToolButton;
+    firstIndex->setText(QString("1"));
+    secondIndex->setText(QString("2"));
+    ui->IndexLayout->addWidget(secondIndex);
+    ui->IndexLayout->addWidget(firstIndex);
+
 }
 void MainWindow::mousePressEvent(QMouseEvent *event)
 {

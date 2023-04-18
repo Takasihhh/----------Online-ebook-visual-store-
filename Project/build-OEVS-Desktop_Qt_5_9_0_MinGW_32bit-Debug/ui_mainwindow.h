@@ -42,7 +42,7 @@ public:
     QGridLayout *gridLayout;
     QFrame *frame_3;
     QWidget *horizontalLayoutWidget_3;
-    QHBoxLayout *horizontalLayout_2;
+    QHBoxLayout *IndexLayout;
     QWidget *gridLayoutWidget_2;
     QGridLayout *MainFrameLayout;
 
@@ -106,9 +106,9 @@ public:
         horizontalLayoutWidget_3 = new QWidget(frame_3);
         horizontalLayoutWidget_3->setObjectName(QStringLiteral("horizontalLayoutWidget_3"));
         horizontalLayoutWidget_3->setGeometry(QRect(40, 450, 941, 51));
-        horizontalLayout_2 = new QHBoxLayout(horizontalLayoutWidget_3);
-        horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
-        horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
+        IndexLayout = new QHBoxLayout(horizontalLayoutWidget_3);
+        IndexLayout->setObjectName(QStringLiteral("IndexLayout"));
+        IndexLayout->setContentsMargins(0, 0, 0, 0);
         gridLayoutWidget_2 = new QWidget(frame_3);
         gridLayoutWidget_2->setObjectName(QStringLiteral("gridLayoutWidget_2"));
         gridLayoutWidget_2->setGeometry(QRect(40, 30, 931, 391));

@@ -25,6 +25,7 @@ private:
     void InitBookList();
     void InitSearchFrame();
     void InitMainFrame();
+    void InitIndexList();
     QtMaterialAppBar *const headerBar;
     QPoint mouse_start_point;
     QPoint window_start_point;
