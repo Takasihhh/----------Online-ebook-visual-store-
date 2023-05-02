@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/Img">
+        <file>lock.png</file>
+        <file>book.png</file>
+        <file>Bg_gif.gif</file>
+        <file>Close.png</file>
+        <file>Minisize.png</file>
+        <file>Das_Kapital.jpg</file>
+        <file>maoist.jpg</file>
+        <file>Privateigenthums.jpg</file>
+        <file>Search_icon.png</file>
+    </qresource>
+    <qresource prefix="/Model"/>
+    <qresource prefix="/Shader"/>
+</RCC>

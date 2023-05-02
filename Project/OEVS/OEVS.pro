@@ -4,8 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
-
+QT       += core gui sql
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = OEVS
@@ -68,7 +67,12 @@ SOURCES += \
     loginui.cpp \
     mainwindow.cpp \
     booklistslot.cpp \
-    bookbutton.cpp
+    bookbutton.cpp \
+    tinyrenderer.cpp \
+    qopenglwindow.cpp \
+    viewwnd.cpp \
+    signupwidget.cpp \
+    odbcdatabase.cpp
 
 HEADERS += \
         SDK/MaterialSDK/components/qtmaterialappbar.h \
@@ -138,14 +142,23 @@ HEADERS += \
     loginui.h \
     mainwindow.h \
     booklistslot.h \
-    bookbutton.h
+    bookbutton.h \
+    qopenglwindow.h \
+    tinyrenderer.h \
+    qopenglwindow.h \
+    viewwnd.h \
+    signupwidget.h \
+    odbcdatabase.h
 
 FORMS += \
         widget.ui \
     loginui.ui \
     mainwindow.ui \
     booklistslot.ui \
-    bookbutton.ui
+    bookbutton.ui \
+    qopenglwindow.ui \
+    viewwnd.ui \
+    signupwidget.ui
 
 #import Material SDK(导入Material组件库的SDK)
 LIBS += C:/Users/27412/Desktop/DataBasePrograming/----------Online-ebook-visual-store-/Project/OEVS/SDK/MaterialSDK/staticlib/libcomponents.a

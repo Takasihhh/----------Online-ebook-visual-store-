@@ -1,13 +1,26 @@
 <RCC>
-    <qresource prefix="/new/prefix1">
-        <file>lock.png</file>
-        <file>book.png</file>
-        <file>Bg_gif.gif</file>
-        <file>Close.png</file>
-        <file>Minisize.png</file>
-        <file>Das_Kapital.jpg</file>
-        <file>maoist.jpg</file>
-        <file>Privateigenthums.jpg</file>
-        <file>Search_icon.png</file>
+    <qresource prefix="/Img">
+        <file>Image/Bg_gif.gif</file>
+        <file>Image/book.png</file>
+        <file>Image/Close.png</file>
+        <file>Image/Das_Kapital.jpg</file>
+        <file>Image/lock.png</file>
+        <file>Image/maoist.jpg</file>
+        <file>Image/Minisize.png</file>
+        <file>Image/Privateigenthums.jpg</file>
+        <file>Image/qres.qrc</file>
+        <file>Image/Search_icon.png</file>
+    </qresource>
+    <qresource prefix="/Model">
+        <file>Model/book2.obj</file>
+        <file>Model/book3.mtl</file>
+        <file>Model/book3.obj</file>
+        <file>Model/bookUV.png</file>
+        <file>Model/bookUVt.png</file>
+    </qresource>
+    <qresource prefix="/Shader">
+        <file>ShaderProgram/fsrc.frag</file>
+        <file>ShaderProgram/vsrc.vert</file>
+        <file>ShaderProgram/vsrc1.vert</file>
     </qresource>
 </RCC>
