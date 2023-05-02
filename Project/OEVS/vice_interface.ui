@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>vice_interface</class>
+ <widget class="QWidget" name="vice_interface">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QOpenGLWidget" name="openGLWidget">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>20</y>
+     <width>211</width>
+     <height>181</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>220</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="text">
+    <string>可视化效果展示</string>
+   </property>
+  </widget>
+  <widget class="QTreeWidget" name="treeWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>201</width>
+     <height>581</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>书库</string>
+    </property>
+   </column>
+   <item>
+    <property name="text">
+     <string>book1</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>book2</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>book3</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>book4</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>book5</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>book6</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>book7</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>book8</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QToolButton" name="toolButton">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>10</y>
+     <width>171</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="icon">
+    <iconset resource="img.qrc">
+     <normaloff>:/img/book1.png</normaloff>:/img/book1.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>170</width>
+     <height>200</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>220</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>下载</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>220</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>收藏</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>10</y>
+     <width>311</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>shuxing</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>书名：布鲁克林有棵树</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>作者：</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>出版社：</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>类型：</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>关键词：</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>270</y>
+     <width>741</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:15px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:28px; line-height:24px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica Neue,Helvetica,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;简介：《布鲁克林有棵树》是美国作家贝蒂·史密斯创作的长篇小说，首次出版于1943年。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:15px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:28px; line-height:24px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica Neue,Helvetica,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;该小说讲述生活在美国贫民区布鲁克林的小女孩弗兰西，在成长过程中饱经家庭的不幸，同学的歧视和社会的不公。她从贫困的家庭中艰难地成长，凭借坚韧不拔的意志朝梦想奋起直追，终于走出贫民窟，考上大学。&lt;/span&gt;&lt;span style=&quot; font-family:'Helvetica Neue,Helvetica,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif'; font-size:14px; color:#333333;&quot;&gt; 该小说突出平凡人努力追求自己的梦想，坦然面对生活的苦难。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:15px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:28px; line-height:24px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica Neue,Helvetica,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;11岁的女孩弗兰西生活在布鲁克林穷人区，和其他布鲁克林小孩一样，她和弟弟尼雷会在外面捡些布头、纸张、金属、橡胶等破烂，每逢周末，她就和弟弟一起去垃圾站卖掉他们捡来的垃圾，换得几枚硬币。她熟悉每一种废品的价格，也知道如何买到廉价的发霉面包。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:15px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:24px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica Neue,Helvetica,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;一心想成为作家的弗兰西天生喜欢读书，逮到什么读什么：经典作品她读，垃圾作品她也读，连时刻表和食品店的价目表她都读。每周弗兰西都会请求图书管理员给她推荐一本好书，如果图书管理员能微笑一下，或是说句友善的话，弗兰西就很开心了。她爱图书馆，也希望图书馆的管理人员能让她钦佩，可惜图书管理员总想着别的事，不大喜欢小孩儿。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:15px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:24px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica Neue,Helvetica,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;弗兰西一直想拥有一本书，实在不行抄写一本也行。她发誓长大后努力工作，好好存钱，将自己喜欢的书全都买下，这个想法对于她来说是个巨大安慰。每个周末，她都会拿着一本书，独自在家，边读书边快乐。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:15px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:24px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica Neue,Helvetica,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;弗兰西的书读完的时候，爸爸也回来了，弗兰西一边帮爸爸熨衣服，一边和爸爸聊天。弗兰西的爸爸是个一无是处的歌手，经常喝得醉醺醺的，但她还是很喜欢爸爸。在她的眼里，爸爸帅气潇洒，比别人的爸爸都要优雅，风度翩翩。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:15px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:24px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica Neue,Helvetica,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;弗兰西的妈妈靠擦洗地板和当看门人维持家用，她是全家的经济支柱。她希望自己的孩子能生活得好一点儿，她梦想着能供养两个孩子上大学。她的外祖母没有文化，连字都不识，却建议弗兰西的妈妈给自己的孩子读《圣经》，读莎士比亚，讲述民间故事和童话，好让孩子虽然处于困境当中，也不至于沉沦。弗兰西姐弟在物质上几乎一无所有，却意外地拥有了巨大的精神财富。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:15px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:24px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica Neue,Helvetica,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;弗兰西跟爸爸亲，跟妈妈疏远，但最了解女儿的，却恰恰是这位母亲。在生产第三个孩子几乎要死掉的时候，母亲吐露了心声，说儿子本来不喜欢读书，如果停他的学，他永远都不会再回去；而弗兰西不一样，她会拼，会斗，她还会回去的，就如同太平梯那里的那棵天堂树。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:15px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:24px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica Neue,Helvetica,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;弗兰西在艰辛的生活中品味着成长的种种无奈：家境的贫穷、同学的歧视、社会的不公……然而她始终像那棵长在水泥地里的树，奋力成长，坚韧不拔。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:15px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:24px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica Neue,Helvetica,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;弗兰西带着自己的梦想，从书中如饥似渴地汲取知识。几经周折，她终于得以进入大学的校门，离开了熟悉的故乡。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <zorder>openGLWidget</zorder>
+  <zorder>pushButton</zorder>
+  <zorder>treeWidget</zorder>
+  <zorder>toolButton</zorder>
+  <zorder>pushButton_2</zorder>
+  <zorder>pushButton_3</zorder>
+  <zorder>groupBox</zorder>
+  <zorder>label_2</zorder>
+  <zorder>textEdit</zorder>
+ </widget>
+ <resources>
+  <include location="img.qrc"/>
+ </resources>
+ <connections/>
+</ui>
