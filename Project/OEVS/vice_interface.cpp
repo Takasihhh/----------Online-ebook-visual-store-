@@ -1,31 +1,86 @@
-<<<<<<< HEAD
 #include "vice_interface.h"
 #include "ui_vice_interface.h"
 
 vice_interface::vice_interface(QWidget *parent) :
     QWidget(parent),
-    ui(new Ui::vice_interface)
+    ui(new Ui::vice_interface),
+    headerBar(new QtMaterialAppBar)
 {
     ui->setupUi(this);
+    setWindowFlags(Qt::FramelessWindowHint | windowFlags());
+    //this->resize(1280,720);
+    InitUI();
 }
 
 vice_interface::~vice_interface()
 {
     delete ui;
 }
-=======
-#include "vice_interface.h"
-#include "ui_vice_interface.h"
 
-vice_interface::vice_interface(QWidget *parent) :
-    QWidget(parent),
-    ui(new Ui::vice_interface)
+void vice_interface::CloseWindow()
 {
-    ui->setupUi(this);
+    this->close();
 }
 
-vice_interface::~vice_interface()
+void vice_interface::MinisizeWindow()
 {
-    delete ui;
+    this->showMinimized();
 }
->>>>>>> 26bd0e02415206b1c82c494c3ee192ee4b559c65
+
+void vice_interface::OpenViewWnd()
+{
+    ViewWnd * vWnd = new ViewWnd;
+    //this->close();
+    vWnd->setWindowModality(Qt::ApplicationModal);
+    vWnd->show();
+
+}
+
+
+
+void vice_interface::mousePressEvent(QMouseEvent *event)
+{
+    if(event->button() == Qt::LeftButton){
+        isDrag  =true;
+        mouse_start_point = event->globalPos();
+        window_start_point = this->frameGeometry().topLeft();
+    }
+}
+
+void vice_interface::mouseMoveEvent(QMouseEvent *event)
+{
+    if(isDrag){
+        QPoint moveDistance = event->globalPos()-mouse_start_point;
+        this->move(window_start_point + moveDistance);
+    }
+}
+
+void vice_interface::mouseReleaseEvent(QMouseEvent *event)
+{
+    if(event->button() ==  Qt::LeftButton)
+        isDrag = false;
+}
+
+void vice_interface::InitUI()
+{
+    headerBar->setSizeIncrement(1280,100);
+    ui->Header->addWidget(headerBar);
+
+    QToolButton * close_btn = new QToolButton(this);
+  //  close_btn->setGeometry(1260,5,30,30);
+    close_btn->setIconSize(QSize(30,30));
+    close_btn->setIcon(QIcon(":/Img/Image/Close.png"));
+
+
+    QToolButton * minisize_btn = new QToolButton(this);
+  // minisize_btn->setGeometry(590,5,30,30);
+    minisize_btn->setIcon(QIcon(":/Img/Image/Minisize.png"));
+    minisize_btn->setIconSize(QSize(30,30));
+
+    ui->toolLayout->addWidget(minisize_btn);
+    ui->toolLayout->addWidget(close_btn);
+
+    connect(ui->viewWnd,SIGNAL(clicked(bool)),this,SLOT(OpenViewWnd()));
+    connect(close_btn,SIGNAL(clicked(bool)),this,SLOT(CloseWindow()));
+    connect(minisize_btn,SIGNAL(clicked(bool)),this,SLOT(MinisizeWindow()));
+}

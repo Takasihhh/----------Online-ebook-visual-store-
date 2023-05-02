@@ -149,7 +149,7 @@
            <height>51</height>
           </rect>
          </property>
-         <layout class="QHBoxLayout" name="horizontalLayout_2"/>
+         <layout class="QHBoxLayout" name="IndexLayout"/>
         </widget>
         <widget class="QWidget" name="gridLayoutWidget_2">
          <property name="geometry">

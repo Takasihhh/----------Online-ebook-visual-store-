@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>main_interface</class>
@@ -17,24 +16,11 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QScrollBar" name="horizontalScrollBar">
-   <property name="geometry">
-    <rect>
-     <x>500</x>
-     <y>550</y>
-     <width>160</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-  </widget>
   <widget class="QToolButton" name="btn_himg">
    <property name="geometry">
     <rect>
      <x>890</x>
-     <y>20</y>
+     <y>60</y>
      <width>91</width>
      <height>81</height>
     </rect>
@@ -47,7 +33,7 @@
    <property name="geometry">
     <rect>
      <x>880</x>
-     <y>120</y>
+     <y>200</y>
      <width>117</width>
      <height>211</height>
     </rect>
@@ -60,13 +46,6 @@
      <widget class="QPushButton" name="btn_pi">
       <property name="text">
        <string>个人信息</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="btn_login">
-      <property name="text">
-       <string>登录</string>
       </property>
      </widget>
     </item>
@@ -97,7 +76,7 @@
    <property name="geometry">
     <rect>
      <x>330</x>
-     <y>130</y>
+     <y>140</y>
      <width>501</width>
      <height>391</height>
     </rect>
@@ -106,14 +85,27 @@
     <string>bookdisplay</string>
    </property>
    <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="4">
-     <widget class="QToolButton" name="book3">
+    <item row="0" column="1">
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="2" column="0">
+     <widget class="QToolButton" name="book4">
       <property name="text">
        <string>...</string>
       </property>
       <property name="icon">
-       <iconset resource="img.qrc">
-        <normaloff>:/img/book3.png</normaloff>:/img/book3.png</iconset>
+       <iconset>
+        <normaloff>:/img/book4.png</normaloff>:/img/book4.png</iconset>
       </property>
       <property name="iconSize">
        <size>
@@ -123,14 +115,14 @@
       </property>
      </widget>
     </item>
-    <item row="2" column="0">
-     <widget class="QToolButton" name="book4">
+    <item row="0" column="4">
+     <widget class="QToolButton" name="book3">
       <property name="text">
        <string>...</string>
       </property>
       <property name="icon">
-       <iconset resource="img.qrc">
-        <normaloff>:/img/book4.png</normaloff>:/img/book4.png</iconset>
+       <iconset>
+        <normaloff>:/img/book3.png</normaloff>:/img/book3.png</iconset>
       </property>
       <property name="iconSize">
        <size>
@@ -149,7 +141,7 @@
        <string>...</string>
       </property>
       <property name="icon">
-       <iconset resource="img.qrc">
+       <iconset>
         <normaloff>:/img/book1.png</normaloff>:/img/book1.png</iconset>
       </property>
       <property name="iconSize">
@@ -160,43 +152,13 @@
       </property>
      </widget>
     </item>
-    <item row="0" column="2">
-     <widget class="QToolButton" name="book2">
-      <property name="text">
-       <string>...</string>
-      </property>
-      <property name="icon">
-       <iconset resource="img.qrc">
-        <normaloff>:/img/book2.png</normaloff>:/img/book2.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>120</width>
-        <height>150</height>
-       </size>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="3">
-     <spacer name="horizontalSpacer_2">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>40</width>
-        <height>20</height>
-       </size>
-      </property>
-     </spacer>
-    </item>
     <item row="2" column="2">
      <widget class="QToolButton" name="book5">
       <property name="text">
        <string>...</string>
       </property>
       <property name="icon">
-       <iconset resource="img.qrc">
+       <iconset>
         <normaloff>:/img/book5.png</normaloff>:/img/book5.png</iconset>
       </property>
       <property name="iconSize">
@@ -213,7 +175,7 @@
        <string>...</string>
       </property>
       <property name="icon">
-       <iconset resource="img.qrc">
+       <iconset>
         <normaloff>:/img/book6.png</normaloff>:/img/book6.png</iconset>
       </property>
       <property name="iconSize">
@@ -224,8 +186,8 @@
       </property>
      </widget>
     </item>
-    <item row="0" column="1">
-     <spacer name="horizontalSpacer">
+    <item row="0" column="3">
+     <spacer name="horizontalSpacer_2">
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
       </property>
@@ -250,13 +212,30 @@
       </property>
      </spacer>
     </item>
+    <item row="0" column="2">
+     <widget class="QToolButton" name="book2">
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>:/img/book2.png</normaloff>:/img/book2.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>120</width>
+        <height>150</height>
+       </size>
+      </property>
+     </widget>
+    </item>
    </layout>
   </widget>
   <widget class="QGroupBox" name="search">
    <property name="geometry">
     <rect>
      <x>330</x>
-     <y>20</y>
+     <y>40</y>
      <width>501</width>
      <height>91</height>
     </rect>
@@ -280,10 +259,10 @@
   <widget class="QTreeWidget" name="booklistshow">
    <property name="geometry">
     <rect>
-     <x>40</x>
+     <x>0</x>
      <y>30</y>
      <width>231</width>
-     <height>551</height>
+     <height>571</height>
     </rect>
    </property>
    <column>
@@ -542,560 +521,71 @@
     </item>
    </item>
   </widget>
- </widget>
- <resources>
-  <include location="img.qrc"/>
- </resources>
- <connections/>
-</ui>
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<ui version="4.0">
- <class>main_interface</class>
- <widget class="QWidget" name="main_interface">
-  <property name="geometry">
-   <rect>
-    <x>0</x>
-    <y>0</y>
-    <width>1000</width>
-    <height>600</height>
-   </rect>
-  </property>
-  <property name="tabletTracking">
-   <bool>false</bool>
-  </property>
-  <property name="windowTitle">
-   <string>Form</string>
-  </property>
-  <widget class="QScrollBar" name="horizontalScrollBar">
+  <widget class="QWidget" name="verticalLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>500</x>
-     <y>550</y>
-     <width>160</width>
-     <height>16</height>
+     <x>-1</x>
+     <y>0</y>
+     <width>1001</width>
+     <height>31</height>
     </rect>
    </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
+   <layout class="QVBoxLayout" name="Header"/>
   </widget>
-  <widget class="QToolButton" name="btn_himg">
+  <widget class="QFrame" name="frame">
    <property name="geometry">
     <rect>
-     <x>890</x>
-     <y>20</y>
-     <width>91</width>
-     <height>81</height>
+     <x>-1</x>
+     <y>-1</y>
+     <width>1001</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>0</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="toolLayout"/>
+   </widget>
+  </widget>
+  <widget class="QToolButton" name="toolButton">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>560</y>
+     <width>61</width>
+     <height>22</height>
     </rect>
    </property>
    <property name="text">
-    <string>头像</string>
+    <string>上一页</string>
    </property>
   </widget>
-  <widget class="QGroupBox" name="function">
+  <widget class="QToolButton" name="toolButton_2">
    <property name="geometry">
     <rect>
-     <x>880</x>
-     <y>120</y>
-     <width>117</width>
-     <height>211</height>
+     <x>640</x>
+     <y>560</y>
+     <width>61</width>
+     <height>22</height>
     </rect>
    </property>
-   <property name="title">
-    <string>function</string>
+   <property name="text">
+    <string>下一页</string>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout">
-    <item>
-     <widget class="QPushButton" name="btn_pi">
-      <property name="text">
-       <string>个人信息</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="btn_login">
-      <property name="text">
-       <string>登录</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="btn_set">
-      <property name="text">
-       <string>设置</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="btn_clt">
-      <property name="text">
-       <string>我的收藏</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="btn_his">
-      <property name="text">
-       <string>历史记录</string>
-      </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
-  <widget class="QGroupBox" name="bookdiaplay">
-   <property name="geometry">
-    <rect>
-     <x>330</x>
-     <y>130</y>
-     <width>501</width>
-     <height>391</height>
-    </rect>
-   </property>
-   <property name="title">
-    <string>bookdisplay</string>
-   </property>
-   <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="4">
-     <widget class="QToolButton" name="book3">
-      <property name="text">
-       <string>...</string>
-      </property>
-      <property name="icon">
-       <iconset resource="img.qrc">
-        <normaloff>:/img/book3.png</normaloff>:/img/book3.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>120</width>
-        <height>150</height>
-       </size>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="0">
-     <widget class="QToolButton" name="book4">
-      <property name="text">
-       <string>...</string>
-      </property>
-      <property name="icon">
-       <iconset resource="img.qrc">
-        <normaloff>:/img/book4.png</normaloff>:/img/book4.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>120</width>
-        <height>150</height>
-       </size>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="0">
-     <widget class="QToolButton" name="book1">
-      <property name="acceptDrops">
-       <bool>false</bool>
-      </property>
-      <property name="text">
-       <string>...</string>
-      </property>
-      <property name="icon">
-       <iconset resource="img.qrc">
-        <normaloff>:/img/book1.png</normaloff>:/img/book1.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>120</width>
-        <height>150</height>
-       </size>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="2">
-     <widget class="QToolButton" name="book2">
-      <property name="text">
-       <string>...</string>
-      </property>
-      <property name="icon">
-       <iconset resource="img.qrc">
-        <normaloff>:/img/book2.png</normaloff>:/img/book2.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>120</width>
-        <height>150</height>
-       </size>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="3">
-     <spacer name="horizontalSpacer_2">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>40</width>
-        <height>20</height>
-       </size>
-      </property>
-     </spacer>
-    </item>
-    <item row="2" column="2">
-     <widget class="QToolButton" name="book5">
-      <property name="text">
-       <string>...</string>
-      </property>
-      <property name="icon">
-       <iconset resource="img.qrc">
-        <normaloff>:/img/book5.png</normaloff>:/img/book5.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>120</width>
-        <height>150</height>
-       </size>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="4">
-     <widget class="QToolButton" name="book6">
-      <property name="text">
-       <string>...</string>
-      </property>
-      <property name="icon">
-       <iconset resource="img.qrc">
-        <normaloff>:/img/book6.png</normaloff>:/img/book6.png</iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>120</width>
-        <height>150</height>
-       </size>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="1">
-     <spacer name="horizontalSpacer">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>40</width>
-        <height>20</height>
-       </size>
-      </property>
-     </spacer>
-    </item>
-    <item row="1" column="0">
-     <spacer name="verticalSpacer">
-      <property name="orientation">
-       <enum>Qt::Vertical</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>20</width>
-        <height>40</height>
-       </size>
-      </property>
-     </spacer>
-    </item>
-   </layout>
-  </widget>
-  <widget class="QGroupBox" name="search">
-   <property name="geometry">
-    <rect>
-     <x>330</x>
-     <y>20</y>
-     <width>501</width>
-     <height>91</height>
-    </rect>
-   </property>
-   <property name="title">
-    <string>search</string>
-   </property>
-   <layout class="QHBoxLayout" name="horizontalLayout">
-    <item>
-     <widget class="QLineEdit" name="LE_search"/>
-    </item>
-    <item>
-     <widget class="QToolButton" name="btn_search">
-      <property name="text">
-       <string>🔍</string>
-      </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
-  <widget class="QTreeWidget" name="booklistshow">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>30</y>
-     <width>231</width>
-     <height>551</height>
-    </rect>
-   </property>
-   <column>
-    <property name="text">
-     <string>booklist</string>
-    </property>
-   </column>
-   <item>
-    <property name="text">
-     <string>小说类</string>
-    </property>
-    <item>
-     <property name="text">
-      <string>文学小说</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>言情小说</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>科幻小说</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>悬疑小说</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>历史小说</string>
-     </property>
-    </item>
-   </item>
-   <item>
-    <property name="text">
-     <string>非小说类</string>
-    </property>
-    <item>
-     <property name="text">
-      <string>人文社科类</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>教育考试类</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>艺术设计类</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>健康养生类</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>旅游地理类</string>
-     </property>
-    </item>
-   </item>
-   <item>
-    <property name="text">
-     <string>儿童读物类</string>
-    </property>
-    <item>
-     <property name="text">
-      <string>绘本</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>童话</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>动漫</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>科普</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>成长教育</string>
-     </property>
-    </item>
-   </item>
-   <item>
-    <property name="text">
-     <string>科学科技类</string>
-    </property>
-    <item>
-     <property name="text">
-      <string>自然科学</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>工程科技</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>医学健康</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>计算机网路</string>
-     </property>
-    </item>
-   </item>
-   <item>
-    <property name="text">
-     <string>经济管理类</string>
-    </property>
-    <item>
-     <property name="text">
-      <string>营销管理</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>财务会计</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>投资金融</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>企业管理</string>
-     </property>
-    </item>
-   </item>
-   <item>
-    <property name="text">
-     <string>文化艺术类</string>
-    </property>
-    <item>
-     <property name="text">
-      <string>历史文化</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>音乐舞蹈</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>美术书法</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>电影戏剧</string>
-     </property>
-    </item>
-   </item>
-   <item>
-    <property name="text">
-     <string>军事类</string>
-    </property>
-    <item>
-     <property name="text">
-      <string>军事历史</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>军事理论</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>军事科技</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>军事小说</string>
-     </property>
-    </item>
-   </item>
-   <item>
-    <property name="text">
-     <string>哲学宗教类</string>
-    </property>
-    <item>
-     <property name="text">
-      <string>哲学思想</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>宗教文化</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>心灵生活</string>
-     </property>
-    </item>
-   </item>
-   <item>
-    <property name="text">
-     <string>新闻传播类</string>
-    </property>
-    <item>
-     <property name="text">
-      <string>新闻时事</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>传媒研究</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>广告营销</string>
-     </property>
-    </item>
-   </item>
-   <item>
-    <property name="text">
-     <string>法律政治类</string>
-    </property>
-    <item>
-     <property name="text">
-      <string>政治理论</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>法律实务</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>公共管理</string>
-     </property>
-    </item>
-   </item>
   </widget>
  </widget>
- <resources>
-  <include location="img.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>
->>>>>>> 26bd0e02415206b1c82c494c3ee192ee4b559c65
