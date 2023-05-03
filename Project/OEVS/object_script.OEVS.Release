@@ -1,4 +1,9 @@
 INPUT(
+<<<<<<< HEAD
+./release\main.o
+./release\mainwindow.o
+<<<<<<<< HEAD:Project/OEVS/object_script.OEVS.Release
+=======
 ./release\qtmaterialappbar.o
 ./release\qtmaterialautocomplete.o
 ./release\qtmaterialautocomplete_internal.o
@@ -41,6 +46,7 @@ INPUT(
 ./release\widget.o
 ./release\loginui.o
 ./release\mainwindow.o
+>>>>>>> shizhonyu
 ./release\booklistslot.o
 ./release\bookbutton.o
 ./release\tinyrenderer.o
@@ -48,6 +54,11 @@ INPUT(
 ./release\viewwnd.o
 ./release\signupwidget.o
 ./release\odbcdatabase.o
+<<<<<<< HEAD
+=======
+./release\main_interface.o
+./release\vice_interface.o
+>>>>>>> shizhonyu
 ./release\qrc_qres.o
 ./release\moc_qtmaterialappbar.o
 ./release\moc_qtmaterialautocomplete.o
@@ -91,4 +102,19 @@ INPUT(
 ./release\moc_viewwnd.o
 ./release\moc_signupwidget.o
 ./release\moc_odbcdatabase.o
+<<<<<<< HEAD
+========
+./release\registered.o
+./release\main_interface.o
+./release\vice_interface.o
+./release\qrc_img.o
+./release\moc_mainwindow.o
+./release\moc_registered.o
+./release\moc_main_interface.o
+./release\moc_vice_interface.o
+>>>>>>>> shizhonyu:Project/build-OEVS-Desktop_Qt_5_9_0_MinGW_32bit-Debug/object_script.OEVS.Release
+=======
+./release\moc_main_interface.o
+./release\moc_vice_interface.o
+>>>>>>> shizhonyu
 );

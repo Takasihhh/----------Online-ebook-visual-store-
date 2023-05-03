@@ -82,7 +82,11 @@ bool TinyRenderer::loadObj(QString fileName, QVector<float> &vPoints, QVector<fl
         QVector<std::tuple<int,int,int>> facesIndexs;
         while (!objFile.atEnd()) {
             QByteArray lineData = objFile.readLine();
+<<<<<<< HEAD
             lineData = lineData.remove(lineData.count() - 1,2);
+=======
+            lineData = lineData.remove(lineData.count() - 2,2);
+>>>>>>> shizhonyu
             if(lineData.isEmpty()){
                 for(auto &verFaceInfo : facesIndexs){
                     int vIndex = std::get<0>(verFaceInfo);

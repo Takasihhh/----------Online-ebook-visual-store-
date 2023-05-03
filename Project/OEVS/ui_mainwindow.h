@@ -13,11 +13,15 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
-#include <QtWidgets/QFrame>
+#include <QtWidgets/QCheckBox>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
@@ -26,78 +30,70 @@ QT_BEGIN_NAMESPACE
 class Ui_MainWindow
 {
 public:
-    QWidget *centralwidget;
-    QFrame *frame;
-    QWidget *verticalLayoutWidget;
+    QWidget *centralWidget;
     QVBoxLayout *verticalLayout;
-    QWidget *horizontalLayoutWidget;
-    QHBoxLayout *horizontalLayout;
-    QFrame *frame_2;
-    QWidget *verticalLayoutWidget_2;
-    QVBoxLayout *BookListLayout;
-    QWidget *searchWidget;
-    QWidget *horizontalLayoutWidget_2;
-    QHBoxLayout *SearchLaout;
-    QWidget *gridLayoutWidget;
+    QWidget *widget;
     QGridLayout *gridLayout;
+<<<<<<<< HEAD:Project/OEVS/ui_mainwindow.h
     QFrame *frame_3;
     QWidget *horizontalLayoutWidget_3;
     QHBoxLayout *IndexLayout;
     QWidget *gridLayoutWidget_2;
     QGridLayout *MainFrameLayout;
+========
+    QLabel *label_id;
+    QLineEdit *lineEdit_id;
+    QSpacerItem *horizontalSpacer;
+    QLineEdit *lineEdit_pw;
+    QLabel *label_pw;
+    QSpacerItem *horizontalSpacer_2;
+    QWidget *widget_3;
+    QHBoxLayout *horizontalLayout_3;
+    QSpacerItem *horizontalSpacer_6;
+    QPushButton *btn_login;
+    QSpacerItem *horizontalSpacer_7;
+    QPushButton *btn_gst;
+    QSpacerItem *horizontalSpacer_8;
+    QWidget *widget_2;
+    QHBoxLayout *horizontalLayout_2;
+    QSpacerItem *horizontalSpacer_3;
+    QHBoxLayout *horizontalLayout;
+    QCheckBox *checkBox;
+    QSpacerItem *horizontalSpacer_4;
+    QCheckBox *checkBox_2;
+    QSpacerItem *horizontalSpacer_5;
+>>>>>>>> shizhonyu:Project/build-OEVS-Desktop_Qt_5_9_0_MinGW_32bit-Debug/ui_mainwindow.h
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(1280, 720);
-        MainWindow->setLayoutDirection(Qt::RightToLeft);
-        centralwidget = new QWidget(MainWindow);
-        centralwidget->setObjectName(QStringLiteral("centralwidget"));
-        frame = new QFrame(centralwidget);
-        frame->setObjectName(QStringLiteral("frame"));
-        frame->setGeometry(QRect(0, 0, 1281, 80));
-        frame->setFrameShape(QFrame::StyledPanel);
-        frame->setFrameShadow(QFrame::Raised);
-        verticalLayoutWidget = new QWidget(frame);
-        verticalLayoutWidget->setObjectName(QStringLiteral("verticalLayoutWidget"));
-        verticalLayoutWidget->setGeometry(QRect(0, -7, 1281, 91));
-        verticalLayout = new QVBoxLayout(verticalLayoutWidget);
+        MainWindow->resize(550, 420);
+        QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(MainWindow->sizePolicy().hasHeightForWidth());
+        MainWindow->setSizePolicy(sizePolicy);
+        MainWindow->setMinimumSize(QSize(550, 420));
+        MainWindow->setMaximumSize(QSize(550, 420));
+        centralWidget = new QWidget(MainWindow);
+        centralWidget->setObjectName(QStringLiteral("centralWidget"));
+        verticalLayout = new QVBoxLayout(centralWidget);
+        verticalLayout->setSpacing(6);
+        verticalLayout->setContentsMargins(11, 11, 11, 11);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
-        verticalLayout->setContentsMargins(0, 0, 0, 0);
-        horizontalLayoutWidget = new QWidget(centralwidget);
-        horizontalLayoutWidget->setObjectName(QStringLiteral("horizontalLayoutWidget"));
-        horizontalLayoutWidget->setGeometry(QRect(0, 0, 1291, 80));
-        horizontalLayout = new QHBoxLayout(horizontalLayoutWidget);
-        horizontalLayout->setSpacing(1);
-        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
-        horizontalLayout->setContentsMargins(1150, 0, 0, 35);
-        frame_2 = new QFrame(centralwidget);
-        frame_2->setObjectName(QStringLiteral("frame_2"));
-        frame_2->setGeometry(QRect(0, 80, 1280, 641));
-        frame_2->setFrameShape(QFrame::StyledPanel);
-        frame_2->setFrameShadow(QFrame::Raised);
-        verticalLayoutWidget_2 = new QWidget(frame_2);
-        verticalLayoutWidget_2->setObjectName(QStringLiteral("verticalLayoutWidget_2"));
-        verticalLayoutWidget_2->setGeometry(QRect(0, 0, 271, 641));
-        BookListLayout = new QVBoxLayout(verticalLayoutWidget_2);
-        BookListLayout->setSpacing(2);
-        BookListLayout->setObjectName(QStringLiteral("BookListLayout"));
-        BookListLayout->setContentsMargins(0, 0, 0, 200);
-        searchWidget = new QWidget(frame_2);
-        searchWidget->setObjectName(QStringLiteral("searchWidget"));
-        searchWidget->setGeometry(QRect(270, 0, 1011, 131));
-        horizontalLayoutWidget_2 = new QWidget(searchWidget);
-        horizontalLayoutWidget_2->setObjectName(QStringLiteral("horizontalLayoutWidget_2"));
-        horizontalLayoutWidget_2->setGeometry(QRect(30, 20, 931, 80));
-        SearchLaout = new QHBoxLayout(horizontalLayoutWidget_2);
-        SearchLaout->setObjectName(QStringLiteral("SearchLaout"));
-        SearchLaout->setContentsMargins(0, 0, 0, 0);
-        gridLayoutWidget = new QWidget(frame_2);
-        gridLayoutWidget->setObjectName(QStringLiteral("gridLayoutWidget"));
-        gridLayoutWidget->setGeometry(QRect(270, 130, 1011, 521));
-        gridLayout = new QGridLayout(gridLayoutWidget);
+        widget = new QWidget(centralWidget);
+        widget->setObjectName(QStringLiteral("widget"));
+        QSizePolicy sizePolicy1(QSizePolicy::Preferred, QSizePolicy::Fixed);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(widget->sizePolicy().hasHeightForWidth());
+        widget->setSizePolicy(sizePolicy1);
+        gridLayout = new QGridLayout(widget);
+        gridLayout->setSpacing(6);
+        gridLayout->setContentsMargins(11, 11, 11, 11);
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
+<<<<<<<< HEAD:Project/OEVS/ui_mainwindow.h
         gridLayout->setContentsMargins(0, 0, 0, 0);
         frame_3 = new QFrame(gridLayoutWidget);
         frame_3->setObjectName(QStringLiteral("frame_3"));
@@ -115,10 +111,113 @@ public:
         MainFrameLayout = new QGridLayout(gridLayoutWidget_2);
         MainFrameLayout->setObjectName(QStringLiteral("MainFrameLayout"));
         MainFrameLayout->setContentsMargins(0, 0, 0, 0);
+========
+        label_id = new QLabel(widget);
+        label_id->setObjectName(QStringLiteral("label_id"));
 
-        gridLayout->addWidget(frame_3, 0, 0, 1, 1);
+        gridLayout->addWidget(label_id, 0, 1, 1, 1);
 
-        MainWindow->setCentralWidget(centralwidget);
+        lineEdit_id = new QLineEdit(widget);
+        lineEdit_id->setObjectName(QStringLiteral("lineEdit_id"));
+
+        gridLayout->addWidget(lineEdit_id, 0, 2, 1, 1);
+
+        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout->addItem(horizontalSpacer, 0, 0, 1, 1);
+
+        lineEdit_pw = new QLineEdit(widget);
+        lineEdit_pw->setObjectName(QStringLiteral("lineEdit_pw"));
+        lineEdit_pw->setEchoMode(QLineEdit::Password);
+
+        gridLayout->addWidget(lineEdit_pw, 1, 2, 1, 1);
+
+        label_pw = new QLabel(widget);
+        label_pw->setObjectName(QStringLiteral("label_pw"));
+
+        gridLayout->addWidget(label_pw, 1, 1, 1, 1);
+
+        horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout->addItem(horizontalSpacer_2, 0, 3, 1, 1);
+
+
+        verticalLayout->addWidget(widget);
+
+        widget_3 = new QWidget(centralWidget);
+        widget_3->setObjectName(QStringLiteral("widget_3"));
+        sizePolicy1.setHeightForWidth(widget_3->sizePolicy().hasHeightForWidth());
+        widget_3->setSizePolicy(sizePolicy1);
+        horizontalLayout_3 = new QHBoxLayout(widget_3);
+        horizontalLayout_3->setSpacing(6);
+        horizontalLayout_3->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_3->setObjectName(QStringLiteral("horizontalLayout_3"));
+        horizontalSpacer_6 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_3->addItem(horizontalSpacer_6);
+
+        btn_login = new QPushButton(widget_3);
+        btn_login->setObjectName(QStringLiteral("btn_login"));
+
+        horizontalLayout_3->addWidget(btn_login);
+
+        horizontalSpacer_7 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_3->addItem(horizontalSpacer_7);
+
+        btn_gst = new QPushButton(widget_3);
+        btn_gst->setObjectName(QStringLiteral("btn_gst"));
+
+        horizontalLayout_3->addWidget(btn_gst);
+
+        horizontalSpacer_8 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_3->addItem(horizontalSpacer_8);
+
+
+        verticalLayout->addWidget(widget_3);
+
+        widget_2 = new QWidget(centralWidget);
+        widget_2->setObjectName(QStringLiteral("widget_2"));
+        sizePolicy1.setHeightForWidth(widget_2->sizePolicy().hasHeightForWidth());
+        widget_2->setSizePolicy(sizePolicy1);
+        horizontalLayout_2 = new QHBoxLayout(widget_2);
+        horizontalLayout_2->setSpacing(6);
+        horizontalLayout_2->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
+        horizontalSpacer_3 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+>>>>>>>> shizhonyu:Project/build-OEVS-Desktop_Qt_5_9_0_MinGW_32bit-Debug/ui_mainwindow.h
+
+        horizontalLayout_2->addItem(horizontalSpacer_3);
+
+        horizontalLayout = new QHBoxLayout();
+        horizontalLayout->setSpacing(6);
+        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
+        checkBox = new QCheckBox(widget_2);
+        checkBox->setObjectName(QStringLiteral("checkBox"));
+
+        horizontalLayout->addWidget(checkBox);
+
+        horizontalSpacer_4 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout->addItem(horizontalSpacer_4);
+
+        checkBox_2 = new QCheckBox(widget_2);
+        checkBox_2->setObjectName(QStringLiteral("checkBox_2"));
+
+        horizontalLayout->addWidget(checkBox_2);
+
+
+        horizontalLayout_2->addLayout(horizontalLayout);
+
+        horizontalSpacer_5 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_2->addItem(horizontalSpacer_5);
+
+
+        verticalLayout->addWidget(widget_2);
+
+        MainWindow->setCentralWidget(centralWidget);
 
         retranslateUi(MainWindow);
 
@@ -127,7 +226,14 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", Q_NULLPTR));
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "OEVS\347\231\273\345\275\225\347\225\214\351\235\242", Q_NULLPTR));
+        label_id->setText(QApplication::translate("MainWindow", "ID\357\274\232", Q_NULLPTR));
+        lineEdit_pw->setText(QString());
+        label_pw->setText(QApplication::translate("MainWindow", "\345\257\206\347\240\201\357\274\232", Q_NULLPTR));
+        btn_login->setText(QApplication::translate("MainWindow", "\347\231\273\345\275\225", Q_NULLPTR));
+        btn_gst->setText(QApplication::translate("MainWindow", "\346\263\250\345\206\214", Q_NULLPTR));
+        checkBox->setText(QApplication::translate("MainWindow", "\350\207\252\345\212\250\347\231\273\345\275\225", Q_NULLPTR));
+        checkBox_2->setText(QApplication::translate("MainWindow", "\350\256\260\344\275\217\345\257\206\347\240\201", Q_NULLPTR));
     } // retranslateUi
 
 };

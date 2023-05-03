@@ -47,12 +47,20 @@ void MainWindow::InitMainWnd()
     QToolButton * close_btn = new QToolButton(this);
   //  close_btn->setGeometry(1260,5,30,30);
     close_btn->setIconSize(QSize(30,30));
+<<<<<<< HEAD
     close_btn->setIcon(QIcon(":/new/prefix1/Close.png"));
+=======
+    close_btn->setIcon(QIcon(":/Img/Image/Close.png"));
+>>>>>>> shizhonyu
 
 
     QToolButton * minisize_btn = new QToolButton(this);
   // minisize_btn->setGeometry(590,5,30,30);
+<<<<<<< HEAD
     minisize_btn->setIcon(QIcon(":/new/prefix1/Minisize.png"));
+=======
+    minisize_btn->setIcon(QIcon(":/Img/Image/Minisize.png"));
+>>>>>>> shizhonyu
     minisize_btn->setIconSize(QSize(30,30));
     ui->setupUi(this);
 

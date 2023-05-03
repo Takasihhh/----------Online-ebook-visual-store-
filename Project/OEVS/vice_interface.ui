@@ -7,12 +7,17 @@
     <x>0</x>
     <y>0</y>
     <width>1000</width>
+<<<<<<< HEAD
     <height>600</height>
+=======
+    <height>691</height>
+>>>>>>> shizhonyu
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
+<<<<<<< HEAD
   <widget class="QOpenGLWidget" name="openGLWidget">
    <property name="geometry">
     <rect>
@@ -28,6 +33,13 @@
     <rect>
      <x>780</x>
      <y>220</y>
+=======
+  <widget class="QPushButton" name="viewWnd">
+   <property name="geometry">
+    <rect>
+     <x>770</x>
+     <y>150</y>
+>>>>>>> shizhonyu
      <width>181</width>
      <height>31</height>
     </rect>
@@ -46,7 +58,11 @@
    <property name="geometry">
     <rect>
      <x>20</x>
+<<<<<<< HEAD
      <y>10</y>
+=======
+     <y>70</y>
+>>>>>>> shizhonyu
      <width>201</width>
      <height>581</height>
     </rect>
@@ -101,7 +117,11 @@
    <property name="geometry">
     <rect>
      <x>240</x>
+<<<<<<< HEAD
      <y>10</y>
+=======
+     <y>70</y>
+>>>>>>> shizhonyu
      <width>171</width>
      <height>201</height>
     </rect>
@@ -110,7 +130,11 @@
     <string>...</string>
    </property>
    <property name="icon">
+<<<<<<< HEAD
     <iconset resource="img.qrc">
+=======
+    <iconset>
+>>>>>>> shizhonyu
      <normaloff>:/img/book1.png</normaloff>:/img/book1.png</iconset>
    </property>
    <property name="iconSize">
@@ -124,7 +148,11 @@
    <property name="geometry">
     <rect>
      <x>340</x>
+<<<<<<< HEAD
      <y>220</y>
+=======
+     <y>280</y>
+>>>>>>> shizhonyu
      <width>71</width>
      <height>31</height>
     </rect>
@@ -137,7 +165,11 @@
    <property name="geometry">
     <rect>
      <x>240</x>
+<<<<<<< HEAD
      <y>220</y>
+=======
+     <y>280</y>
+>>>>>>> shizhonyu
      <width>71</width>
      <height>31</height>
     </rect>
@@ -150,7 +182,11 @@
    <property name="geometry">
     <rect>
      <x>430</x>
+<<<<<<< HEAD
      <y>10</y>
+=======
+     <y>70</y>
+>>>>>>> shizhonyu
      <width>311</width>
      <height>201</height>
     </rect>
@@ -200,7 +236,11 @@
    <property name="geometry">
     <rect>
      <x>240</x>
+<<<<<<< HEAD
      <y>270</y>
+=======
+     <y>330</y>
+>>>>>>> shizhonyu
      <width>741</width>
      <height>301</height>
     </rect>
@@ -222,6 +262,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:15px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:24px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Helvetica Neue,Helvetica,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif'; font-size:14px; color:#333333; background-color:#ffffff;&quot;&gt;弗兰西带着自己的梦想，从书中如饥似渴地汲取知识。几经周折，她终于得以进入大学的校门，离开了熟悉的故乡。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
+<<<<<<< HEAD
   <zorder>openGLWidget</zorder>
   <zorder>pushButton</zorder>
   <zorder>treeWidget</zorder>
@@ -235,5 +276,47 @@ p, li { white-space: pre-wrap; }
  <resources>
   <include location="img.qrc"/>
  </resources>
+=======
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1001</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="Header"/>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>-1</y>
+     <width>1001</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>0</y>
+      <width>211</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="toolLayout"/>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+>>>>>>> shizhonyu
  <connections/>
 </ui>

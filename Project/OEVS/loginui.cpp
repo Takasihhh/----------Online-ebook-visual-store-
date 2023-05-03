@@ -215,7 +215,13 @@ void LoginUI::LoginToWnd()
 
 void LoginUI::openSignupWnd()
 {
+<<<<<<< HEAD
     SignUpWidget * signup;
     //this->close();
+=======
+    SignUpWidget * signup = new SignUpWidget;
+    //this->close();
+    signup->setWindowModality(Qt::ApplicationModal);
+>>>>>>> shizhonyu
     signup->show();
 }

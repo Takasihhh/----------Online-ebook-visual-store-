@@ -1,4 +1,9 @@
 INPUT(
+<<<<<<< HEAD
+./debug\main.o
+./debug\mainwindow.o
+<<<<<<<< HEAD:Project/OEVS/object_script.OEVS.Debug
+=======
 ./debug\qtmaterialappbar.o
 ./debug\qtmaterialautocomplete.o
 ./debug\qtmaterialautocomplete_internal.o
@@ -41,6 +46,7 @@ INPUT(
 ./debug\widget.o
 ./debug\loginui.o
 ./debug\mainwindow.o
+>>>>>>> shizhonyu
 ./debug\booklistslot.o
 ./debug\bookbutton.o
 ./debug\tinyrenderer.o
@@ -48,6 +54,11 @@ INPUT(
 ./debug\viewwnd.o
 ./debug\signupwidget.o
 ./debug\odbcdatabase.o
+<<<<<<< HEAD
+=======
+./debug\main_interface.o
+./debug\vice_interface.o
+>>>>>>> shizhonyu
 ./debug\qrc_qres.o
 ./debug\moc_qtmaterialappbar.o
 ./debug\moc_qtmaterialautocomplete.o
@@ -91,4 +102,19 @@ INPUT(
 ./debug\moc_viewwnd.o
 ./debug\moc_signupwidget.o
 ./debug\moc_odbcdatabase.o
+<<<<<<< HEAD
+========
+./debug\registered.o
+./debug\main_interface.o
+./debug\vice_interface.o
+./debug\qrc_img.o
+./debug\moc_mainwindow.o
+./debug\moc_registered.o
+./debug\moc_main_interface.o
+./debug\moc_vice_interface.o
+>>>>>>>> shizhonyu:Project/build-OEVS-Desktop_Qt_5_9_0_MinGW_32bit-Debug/object_script.OEVS.Debug
+=======
+./debug\moc_main_interface.o
+./debug\moc_vice_interface.o
+>>>>>>> shizhonyu
 );
