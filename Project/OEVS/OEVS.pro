@@ -72,7 +72,11 @@ SOURCES += \
     qopenglwindow.cpp \
     viewwnd.cpp \
     signupwidget.cpp \
-    odbcdatabase.cpp
+    odbcdatabase.cpp \
+    main_interface.cpp \
+    vice_interface.cpp \
+    bookpage.cpp \
+    buywnd.cpp
 
 HEADERS += \
         SDK/MaterialSDK/components/qtmaterialappbar.h \
@@ -148,7 +152,13 @@ HEADERS += \
     qopenglwindow.h \
     viewwnd.h \
     signupwidget.h \
-    odbcdatabase.h
+    odbcdatabase.h \
+    main_interface.h \
+    vice_interface.h \
+    bookpage.h \
+    buywnd.h
+#    ui_main_interface.h \
+#    ui_vice_interface.h
 
 FORMS += \
         widget.ui \
@@ -158,7 +168,11 @@ FORMS += \
     bookbutton.ui \
     qopenglwindow.ui \
     viewwnd.ui \
-    signupwidget.ui
+    signupwidget.ui \
+    main_interface.ui \
+    vice_interface.ui \
+    bookpage.ui \
+    buywnd.ui
 
 #import Material SDK(导入Material组件库的SDK)
 LIBS += C:/Users/27412/Desktop/DataBasePrograming/----------Online-ebook-visual-store-/Project/OEVS/SDK/MaterialSDK/staticlib/libcomponents.a
@@ -170,4 +184,6 @@ SUBDIRS += \
     SDK/MaterialSDK/components/components.pro
 
 RESOURCES += \
+    Resource/qres.qrc \
     Resource/qres.qrc
+CONFIG += resources_big

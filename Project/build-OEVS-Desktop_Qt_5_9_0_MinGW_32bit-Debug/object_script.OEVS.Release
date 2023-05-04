@@ -1,0 +1,12 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\registered.o
+./release\main_interface.o
+./release\vice_interface.o
+./release\qrc_img.o
+./release\moc_mainwindow.o
+./release\moc_registered.o
+./release\moc_main_interface.o
+./release\moc_vice_interface.o
+);

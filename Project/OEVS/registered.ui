@@ -1,7 +1,4 @@
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> shizhonyu
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>registered</class>
@@ -152,8 +149,6 @@
  <resources/>
  <connections/>
 </ui>
-<<<<<<< HEAD
-=======
 =======
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
@@ -306,4 +301,3 @@
  <connections/>
 </ui>
 >>>>>>> 26bd0e02415206b1c82c494c3ee192ee4b559c65
->>>>>>> shizhonyu

@@ -1,0 +1,12 @@
+INPUT(
+./debug\main.o
+./debug\mainwindow.o
+./debug\registered.o
+./debug\main_interface.o
+./debug\vice_interface.o
+./debug\qrc_img.o
+./debug\moc_mainwindow.o
+./debug\moc_registered.o
+./debug\moc_main_interface.o
+./debug\moc_vice_interface.o
+);

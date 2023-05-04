@@ -13,7 +13,6 @@ SignUpWidget::SignUpWidget(QWidget *parent) :
         setWindowFlags(Qt::FramelessWindowHint | windowFlags());
     this->resize(650,550);
     InitUI();
-
 }
 
 SignUpWidget::~SignUpWidget()
@@ -33,13 +32,24 @@ void SignUpWidget::MinisizeWindow()
 
 void SignUpWidget::SignUp()
 {
+    QString acc = loginID->text();
+    QString pwd = loginPassWord->text();
+
    // this->close();
     if(loginPassWord->text()==NULL || reLoginPwd->text()==NULL || loginID->text() == NULL || UserID->text() == NULL)
     {
         QMessageBox::warning(NULL,"提示","输入为空");
         return;
     }
-
+    if(pwd.length()<MINLEN || pwd.length()>MAXLEN || acc.length()<MINLEN || acc.length()>MAXLEN)
+    {
+        //qDebug()<<"账号或密码格式错误"<<std::endl;
+         loginID->setText("账号或密码格式错误");
+         loginPassWord->setText("");
+         UserID->setText("");
+         reLoginPwd->setText("");
+        return;
+    }
     if(loginPassWord->text()!=reLoginPwd->text())
     {
         loginPassWord->setText("密码不一致");
@@ -49,6 +59,8 @@ void SignUpWidget::SignUp()
         return;
     }
     mysql->SignUpUser(UserID->text(),loginID->text(),loginPassWord->text());
+    QMessageBox::about(NULL,"提示","注册成功");
+    this->close();
 }
 
 SignUpWidget::InitUI()
@@ -78,13 +90,16 @@ SignUpWidget::InitUI()
 
     UserID = new QtMaterialTextField(this);
     UserID->setGeometry(120,160,300,40);
+
     loginID=  new QtMaterialTextField(this);
     loginID->setGeometry(120,220,400,40);
     loginPassWord=  new QtMaterialTextField(this);
     loginPassWord->setGeometry(120,300,400,40);
+    loginPassWord->setEchoMode(QtMaterialTextField::Password);
+
     reLoginPwd = new QtMaterialTextField(this);
     reLoginPwd->setGeometry(120,380,400,40);
-
+    reLoginPwd->setEchoMode(QtMaterialTextField::Password);
 
     QLabel * lableuid = new QLabel(this);
     lableuid->setGeometry(40,160,80,30);

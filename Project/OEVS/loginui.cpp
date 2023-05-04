@@ -17,8 +17,6 @@ LoginUI::LoginUI(QWidget *parent) :
         setWindowFlags(Qt::FramelessWindowHint | windowFlags());
     this->resize(650,550);
 
-    trueLoginID = "1234567";
-    trueLoginPwd = "abcdefg";
     InitUI();
 
 
@@ -73,17 +71,18 @@ void LoginUI::InitUI(){
     loginID->setGeometry(120,200,400,40);
     loginPassWord=  new QtMaterialTextField(this);
     loginPassWord->setGeometry(120,280,400,40);
+    loginPassWord->setEchoMode(QtMaterialTextField::Password);
 
     QLabel * lableID = new QLabel(this);
     lableID->setGeometry(90,200,30,30);
     //lableID->setText("账号");
     //QPicture * LockIcon = new QPicture();
-    lableID->setPixmap(QPixmap::fromImage(QImage(":/Img/Image/lock.png").scaled(lableID->size())));
+    lableID->setPixmap(QPixmap::fromImage(QImage(":/Img/Image/book.png").scaled(lableID->size())));
     //lableID->setFont(labelFonts);
 
    QLabel * lablePassword = new QLabel(this);
    lablePassword->setGeometry(90,285,30,30);
-   lablePassword->setPixmap(QPixmap::fromImage(QImage(":/Img/Image/book.png").scaled(lableID->size())));
+   lablePassword->setPixmap(QPixmap::fromImage(QImage(":/Img/Image/lock.png").scaled(lableID->size())));
 
 
    //记住密码，自动登录
@@ -207,7 +206,9 @@ void LoginUI::LoginToWnd()
         return;
     }
     //TODO:判断是否登录
-    MainWindow * mainWnd = new MainWindow;
+    main_interface * mainWnd = new main_interface;
+
+    mainWnd->LoginMWnd(uid.toInt());
     this->close();
     mainWnd->show();
 
@@ -215,13 +216,8 @@ void LoginUI::LoginToWnd()
 
 void LoginUI::openSignupWnd()
 {
-<<<<<<< HEAD
-    SignUpWidget * signup;
-    //this->close();
-=======
     SignUpWidget * signup = new SignUpWidget;
     //this->close();
     signup->setWindowModality(Qt::ApplicationModal);
->>>>>>> shizhonyu
     signup->show();
 }

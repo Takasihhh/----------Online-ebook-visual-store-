@@ -1,7 +1,4 @@
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> shizhonyu
 #ifndef REGISTERED_H
 #define REGISTERED_H
 
@@ -24,8 +21,6 @@ private:
 };
 
 #endif // REGISTERED_H
-<<<<<<< HEAD
-=======
 =======
 #ifndef REGISTERED_H
 #define REGISTERED_H
@@ -50,4 +45,3 @@ private:
 
 #endif // REGISTERED_H
 >>>>>>> 26bd0e02415206b1c82c494c3ee192ee4b559c65
->>>>>>> shizhonyu

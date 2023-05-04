@@ -16,7 +16,7 @@
 #include "qmovie.h"
 #include <qtmaterialappbar.h>
 #include "qtoolbutton.h"
-#include "mainwindow.h"
+#include "main_interface.h"
 
 #define MAXLEN 12
 #define MINLEN 6
@@ -49,8 +49,6 @@ private:
     QPoint window_start_point;
     bool isDrag;
     void InitUI();
-    QString trueLoginID;
-    QString trueLoginPwd;
 
 private:
     void mousePressEvent(QMouseEvent * event);

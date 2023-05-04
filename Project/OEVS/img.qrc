@@ -1,7 +1,4 @@
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> shizhonyu
 <RCC>
     <qresource prefix="/">
         <file>img/background.png</file>
@@ -13,8 +10,6 @@
         <file>img/book6.png</file>
     </qresource>
 </RCC>
-<<<<<<< HEAD
-=======
 =======
 <RCC>
     <qresource prefix="/">
@@ -28,4 +23,3 @@
     </qresource>
 </RCC>
 >>>>>>> 26bd0e02415206b1c82c494c3ee192ee4b559c65
->>>>>>> shizhonyu

@@ -17,6 +17,9 @@
 #include <qtmaterialappbar.h>
 #include "qtoolbutton.h"
 
+#define MAXLEN 12
+#define MINLEN 6
+
 namespace Ui {
 class SignUpWidget;
 }

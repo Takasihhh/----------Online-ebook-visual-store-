@@ -2,6 +2,7 @@
 #include <iostream>
 #include  <fstream>
 #include <QFile>
+#include "OBJ_Loader.h"
 void TinyRenderer::initsize(QString filename, QImage &textureImg)
 {
     program_.addCacheableShaderFromSourceFile(QOpenGLShader::Vertex,":/Shader/ShaderProgram/vsrc1.vert");
@@ -16,14 +17,16 @@ void TinyRenderer::initsize(QString filename, QImage &textureImg)
    //if(!sucessLoad)
      // qDebug()<<"加载失败"<<endl;
 
-  //  bool sucessLoad = LoadObj(filename,vertPoints_,texturePoints_,normalPoints_);
+    //bool sucessLoad = LoadObj(filename,vertPoints_,texturePoints_,normalPoints_);
     if(!sucessLoad)
         qDebug()<<"加载失败"<<endl;
+    //std::string obj_path = "../models/spot/";
+    //objModelLoader.load(filename,vertPoints_,texturePoints_,normalPoints_);
+     QVector<float> points;
+     //points<<vertextPoints<<texturePoints<<normalPoints;
+     points << vertPoints_ << texturePoints_ << normalPoints_;
 
-   //objModelLoader.load(filename,vertPoints_,texturePoints_,normalPoints_);
-    QVector<float> points;
-    //points<<vertextPoints<<texturePoints<<normalPoints;
-    points << vertPoints_ << texturePoints_ << normalPoints_;
+
     qDebug()<<points.size()<<endl;
     vbo_.create();
     vbo_.bind();
@@ -82,11 +85,7 @@ bool TinyRenderer::loadObj(QString fileName, QVector<float> &vPoints, QVector<fl
         QVector<std::tuple<int,int,int>> facesIndexs;
         while (!objFile.atEnd()) {
             QByteArray lineData = objFile.readLine();
-<<<<<<< HEAD
             lineData = lineData.remove(lineData.count() - 1,2);
-=======
-            lineData = lineData.remove(lineData.count() - 2,2);
->>>>>>> shizhonyu
             if(lineData.isEmpty()){
                 for(auto &verFaceInfo : facesIndexs){
                     int vIndex = std::get<0>(verFaceInfo);

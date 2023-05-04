@@ -1,13 +1,10 @@
 #include "vice_interface.h"
 #include "ui_vice_interface.h"
-
+#include <QMessageBox>
+#include "main_interface.h"
+#include <QDesktopServices>
 vice_interface::vice_interface(QWidget *parent) :
     QWidget(parent),
-<<<<<<< HEAD
-    ui(new Ui::vice_interface)
-{
-    ui->setupUi(this);
-=======
     ui(new Ui::vice_interface),
     headerBar(new QtMaterialAppBar)
 {
@@ -15,15 +12,12 @@ vice_interface::vice_interface(QWidget *parent) :
     setWindowFlags(Qt::FramelessWindowHint | windowFlags());
     //this->resize(1280,720);
     InitUI();
->>>>>>> shizhonyu
 }
 
 vice_interface::~vice_interface()
 {
     delete ui;
 }
-<<<<<<< HEAD
-=======
 
 void vice_interface::CloseWindow()
 {
@@ -37,11 +31,22 @@ void vice_interface::MinisizeWindow()
 
 void vice_interface::OpenViewWnd()
 {
-    ViewWnd * vWnd = new ViewWnd;
+    ViewWnd *vWnd = new ViewWnd;
     //this->close();
     vWnd->setWindowModality(Qt::ApplicationModal);
     vWnd->show();
+}
 
+void vice_interface::UpdateBook(QListWidgetItem *item)
+{
+   currentIndex = ui->listWidget->currentRow()-1;
+   UpdatePage();
+}
+
+void vice_interface::Openurl()
+{
+
+    QDesktopServices::openUrl(QUrl(res[currentIndex].downloadurl.toLatin1()));
 }
 
 
@@ -92,4 +97,41 @@ void vice_interface::InitUI()
     connect(close_btn,SIGNAL(clicked(bool)),this,SLOT(CloseWindow()));
     connect(minisize_btn,SIGNAL(clicked(bool)),this,SLOT(MinisizeWindow()));
 }
->>>>>>> shizhonyu
+
+void vice_interface::UpdatePage()
+{
+    QString ipath = QString(":/Img/BOOK_IMG/%1.jpg").arg(res[currentIndex].bid);
+    QIcon icon(ipath);
+
+    ui->book_Img->setIcon(icon);
+    ui->bname_lab->setText("书名："+res[currentIndex].bname);
+    ui->bauthor_lab->setText("作者："+res[currentIndex].bauthor);
+    ui->ISBN_lab->setText("ISBN："+res[currentIndex].ISBN);
+    ui->textEdit->setText(res[currentIndex].description);
+    ui->dow_btn->disconnect();
+    connect(ui->dow_btn,SIGNAL(clicked(bool)),this,SLOT(Openurl()));
+}
+
+void vice_interface::SetWnd(const int &uid)
+{
+    bool issucess = false;
+    res =  mysql->GetPersonMessage(uid,issucess);
+    if(!issucess)
+    {
+        QMessageBox::warning(NULL,"提示","您还没有书");
+        main_interface * mwnd = new main_interface;
+        mwnd->show();
+        this->close();
+        return;
+    }
+    for(int i =0 ;i<res.size();++i)
+    {
+      QListWidgetItem * listtmp = new QListWidgetItem;
+      listtmp->setText(res[i].bname);
+      listtmp->setToolTip(res[i].bid);
+      ui->listWidget->addItem(listtmp);
+    }
+    connect(ui->listWidget,SIGNAL(itemClicked(QListWidgetItem*)),this,SLOT(UpdateBook(QListWidgetItem*)));
+    currentIndex = 0;
+    UpdatePage();
+}
